@@ -1,0 +1,23 @@
+{
+    "uri": "https://seacloud-2.appspot.com/CmdListI?cmd=StatusList&lg=en",
+    "username": "",
+    "password": "",
+    "parents": [{
+        "id": 111,
+        "name": "Mom"
+    },
+    {
+        "id": 222,
+        "name": "Dad"
+    }],
+    "kids": [
+        {
+            "id": 333,
+            "name": "Baby A"
+        },
+        {
+            "id": 444,
+            "name": "Baby B"
+        }
+    ]
+}
