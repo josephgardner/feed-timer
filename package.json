@@ -1,0 +1,30 @@
+{
+  "name": "feed-timer",
+  "version": "1.0.0",
+  "description": "Baby Connect feed timer dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephgardner/feed-timer.git"
+  },
+  "keywords": [
+    "baby",
+    "connect"
+  ],
+  "author": "Joe Gardner <joe@algoplay.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josephgardner/feed-timer/issues"
+  },
+  "homepage": "https://github.com/josephgardner/feed-timer#readme",
+  "dependencies": {
+    "good": "^6.4.0",
+    "good-console": "^5.2.0",
+    "h2o2": "^5.0.0",
+    "hapi": "^11.1.4",
+    "wreck": "^7.0.0"
+  }
+}
