@@ -28,11 +28,13 @@ utils.handleResponse = function(err, res, request, reply, settings, ttl) {
         json: 'force'
     }, function(err, payload) {
         payload.list.forEach(function(item) {
-            map[item.Kid].last = item.ms.toString();
-            map[item.Kid].item = item;
+            if (item.Cat === 300 || item.Cat === 350) {
+                map[item.Kid].last = item.ms.toString();
+                map[item.Kid].item = item;
+            }
         });
         setKidMap(map);
-        reply(payload);
+        reply(map);
     });
 };
 
