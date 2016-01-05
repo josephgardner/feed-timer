@@ -1,0 +1,45 @@
+.scroll {
+  height: 100%;
+}
+.dashboard {
+  display: flex;
+  height: 100%;
+}
+.marker {
+  font-size: 50%;
+}
+.baby-name {
+  font-size: 32px;
+  padding: 15px;
+}
+.feed-time {
+  font-size: 60px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.feed-message {
+    padding: 10px;
+}
+.heartbeat {
+  color: white;
+}
+.card {
+    margin-top: 0px;
+}
+.change {
+  color: red;
+}
+.change-add, .change-remove {
+  color: white;
+  transition: all 1s;
+  -webkit-transition: all 1s ease-in-out;
+}
+.change-add-active {
+  color: red;
+}
+.change-remove {
+  color: red;
+}
+.change-remove-active {
+  color: white;
+}

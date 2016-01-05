@@ -1,0 +1,48 @@
+<ion-view >
+  <ion-nav-buttons side="secondary">
+    <span class="item-icon-left">
+      <i animate-on-change='updates' class="icon ion-ios-heart heartbeat" color:white></i>
+    </span>
+  </ion-nav-buttons>
+  <ion-nav-title>
+    Feed Timer
+  </ion-nav-title>
+  <ion-content class="padding">
+    <div class="row dashboard">
+      <div class="col">
+        <div class="card">
+          <div class="item item-divider baby-name">
+            {{babyA.name}}
+          </div>
+          <div class="item feed-time">
+            <timer start-time="babyA.time">
+              {{hours}}<span class='marker'>h</span>
+              {{minutes}}<span class='marker'>m</span>
+              <span class='marker'>{{seconds}}s</span>
+            </timer>
+          </div>
+          <div class="item item-text-wrap feed-message">
+            {{babyA.message}}
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="item item-divider baby-name">
+            {{babyB.name}}
+          </div>
+          <div class="item feed-time">
+            <timer start-time="babyB.time">
+              {{hours}}<span class='marker'>h</span>
+              {{minutes}}<span class='marker'>m</span>
+              <span class='marker'>{{seconds}}s</span>
+            </timer>
+          </div>
+          <div class="item item-text-wrap feed-message">
+            {{babyB.message}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
