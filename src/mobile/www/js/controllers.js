@@ -24,14 +24,18 @@ angular.module('starter.controllers', [])
 
   function getKid(data, baby) {
     var item = data[baby.id].item;
-    var date = Date.parse(item.e);
-    if (item.d) {
-      date -= (item.d * 60000);
-    }
+    var Pdate = chunk(String(item.Pdt));
+    var Ptime = chunk(String(item.Ptm));
+    var date = new Date(Pdate[0], Pdate[1], Pdate[2], Ptime[0], Ptime[1]);
+    var time = date.getTime();
     return {
       name: baby.name,
-      time: date,
+      time: time,
       message: item.Txt
     };
+  }
+
+  function chunk(str) {
+    return str.match(/.{1,2}/g);
   }
 });

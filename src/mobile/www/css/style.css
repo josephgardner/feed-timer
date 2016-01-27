@@ -13,18 +13,18 @@
   padding: 15px;
 }
 .feed-time {
-  font-size: 60px;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  font-size: 48px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .feed-message {
-    padding: 10px;
+    padding: 8px;
 }
 .heartbeat {
   color: white;
 }
 .card {
-    margin-top: 0px;
+    margin-top: -8px;
 }
 .change {
   color: red;
